@@ -1,0 +1,39 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * The page-level setup.
+ */
+
+ * {
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    color: $color-brand-secondary;
+    font-family: $font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+::selection {
+    background: rgba(#be915d, 0.5);
+}
+  
+::input-placeholder {
+    color: var(--bld-color-text);
+    opacity: 1;
+}
+
+::placeholder {
+    color: var(--bld-color-text);
+    opacity: 1;
+}
+
+:input-placeholder {
+    color: var(--bld-color-text);
+    opacity: 1;
+}

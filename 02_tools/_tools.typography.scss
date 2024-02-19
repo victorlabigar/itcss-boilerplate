@@ -1,0 +1,78 @@
+/*
+	Typography Mixins
+ */
+
+ $font-styles: (
+    h1: (
+      color: var(--bld-heading-1-color),
+      font: var(--bld-heading-1-font),
+      line-height: var(--bld-heading-1-line-height),
+      size: var(--bld-heading-1-size),
+      style: var(--bld-heading-1-style),
+      weight: var(--bld-heading-1-weight),
+    ),
+    h2: (
+      color: var(--bld-heading-2-color),
+      font: var(--bld-heading-2-font),
+      line-height: var(--bld-heading-2-line-height),
+      size: var(--bld-heading-2-size),
+      style: var(--bld-heading-2-style),
+      weight: var(--bld-heading-2-weight),
+    ),
+    h3: (
+      color: var(--bld-heading-3-color),
+      font: var(--bld-heading-3-font),
+      line-height: var(--bld-heading-3-line-height),
+      size: var(--bld-heading-3-size),
+      style: var(--bld-heading-3-style),
+      weight: var(--bld-heading-3-weight),
+    ),
+    h4: (
+      color: var(--bld-heading-4-color),
+      font: var(--bld-heading-4-font),
+      line-height: var(--bld-heading-4-line-height),
+      size: var(--bld-heading-4-size),
+      style: var(--bld-heading-4-style),
+      weight: var(--bld-heading-4-weight),
+    ),
+    h5: (
+      color: var(--bld-heading-5-color),
+      font: var(--bld-heading-5-font),
+      line-height: var(--bld-heading-5-line-height),
+      size: var(--bld-heading-5-size),
+      style: var(--bld-heading-5-style),
+      weight: var(--bld-heading-5-weight),
+    ),
+    h6: (
+      color: var(--bld-heading-6-color),
+      font: var(--bld-heading-6-font),
+      line-height: var(--bld-heading-6-line-height),
+      size: var(--bld-heading-6-size),
+      style: var(--bld-heading-6-style),
+      weight: var(--bld-heading-6-weight),
+    ),
+    p: (
+      color: var(--bld-paragraph-color),
+      font: var(--bld-paragraph-font),
+      line-height: var(--bld-paragraph-line-height),
+      size: var(--bld-paragraph-size),
+      style: var(--bld-paragraph-style),
+      weight: var(--bld-paragraph-weight),
+    ),
+  );
+  
+  @mixin bld-font($style) {
+    @if map-has-key($font-styles, $style) {
+      $config: map-get($font-styles, $style);
+  
+      color: map-get($config, 'color');
+      font-family: map-get($config, 'font');
+      font-size: map-get($config, 'size');
+      font-style: map-get($config, 'style');
+      font-weight: map-get($config, 'weight');
+      line-height: map-get($config, 'line-height');
+      // margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  

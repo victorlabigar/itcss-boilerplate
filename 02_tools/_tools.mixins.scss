@@ -1,0 +1,9 @@
+@mixin bld-font-heading() {
+    font-family: var(--bld-font-family-heading);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  @mixin bld-font-base() {
+    font-family: var(--bld-font-family-base);
+    -webkit-font-smoothing: antialiased;
+  }

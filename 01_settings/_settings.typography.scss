@@ -1,0 +1,114 @@
+/*
+	Typography Variables
+ */
+:root {
+    /**
+          Public Variables
+          The variables below are the go-to variables and can be used in your theme & project
+       */
+  
+    --bld-font-size-xxxxs: 12px;
+    --bld-font-size-xxxs: 14px;
+    --bld-font-size-xxs: 15px;
+    --bld-font-size-xs: 16px;
+    --bld-font-size-sm: 17px;
+    --bld-font-size-md: 19px;
+    --bld-font-size-lg: 24px;
+    --bld-font-size-xl: 30px;
+    --bld-font-size-xxl: 34px;
+    --bld-font-size-xxxl: 40px;
+  
+    --bld-line-height-xxs: 15px;
+    --bld-line-height-xs: 21px;
+    --bld-line-height-sm: 24px;
+    --bld-line-height-md: 28px;
+    --bld-line-height-lg: 32px;
+    --bld-line-height-xl: 38px;
+    --bld-line-height-xxl: 45px;
+    --bld-line-height-xxxl: 57px;
+  
+    --bld-font-weight-light: 300;
+    --bld-font-weight-normal: 400;
+    --bld-font-weight-semi-bold: 500;
+    --bld-font-weight-semi-bolder: 600;
+    --bld-font-weight-bold: 700;
+    --bld-font-weight-bolder: 800;
+  
+    --bld-heading-1-color: var(--bld-color-heading);
+    --bld-heading-1-font: var(--bld-font-family-heading);
+    --bld-heading-1-line-height: var(--bld-line-height-xxl);
+    --bld-heading-1-size: var(--bld-font-size-xxxl);
+    --bld-heading-1-style: normal;
+    --bld-heading-1-weight: var(--bld-font-weight-normal);
+  
+    --bld-heading-2-color: var(--bld-color-heading);
+    --bld-heading-2-font: var(--bld-font-family-heading);
+    --bld-heading-2-line-height: var(--bld-line-height-xxl);
+    --bld-heading-2-size: var(--bld-font-size-xxl);
+    --bld-heading-2-style: normal;
+    --bld-heading-2-weight: var(--bld-font-weight-normal);
+  
+    --bld-heading-3-color: var(--bld-color-heading);
+    --bld-heading-3-font: var(--bld-font-family-heading);
+    --bld-heading-3-line-height: var(--bld-line-height-lg);
+    --bld-heading-3-size: var(--bld-font-size-xl);
+    --bld-heading-3-style: normal;
+    --bld-heading-3-weight: var(--bld-font-weight-light);
+  
+    --bld-heading-4-color: var(--bld-color-heading);
+    --bld-heading-4-font: var(--bld-font-family-heading);
+    --bld-heading-4-line-height: var(--bld-line-height-sm);
+    --bld-heading-4-size: var(--bld-font-size-lg);
+    --bld-heading-4-style: normal;
+    --bld-heading-4-weight: var(--bld-font-weight-normal);
+  
+    --bld-heading-5-color: var(--bld-color-heading);
+    --bld-heading-5-font: var(--bld-font-family-heading);
+    --bld-heading-5-line-height: var(--bld-line-height-md);
+    --bld-heading-5-size: var(--bld-font-size-md);
+    --bld-heading-5-style: normal;
+    --bld-heading-5-weight: var(--bld-font-weight-normal);
+  
+    --bld-heading-6-color: var(--bld-color-heading);
+    --bld-heading-6-font: var(--bld-font-family-heading);
+    --bld-heading-6-line-height: var(--bld-line-height-sm);
+    --bld-heading-6-size: var(--bld-font-size-xs);
+    --bld-heading-6-style: normal;
+    --bld-heading-6-weight: var(--bld-font-weight-normal);
+  
+    --bld-paragraph-color: var(--bld-color-text);
+    --bld-paragraph-font: var(--bld-font-family-base);
+    --bld-paragraph-line-height: var(--bld-line-height-md);
+    --bld-paragraph-size: var(--bld-font-size-sm);
+    --bld-paragraph-style: normal;
+    --bld-paragraph-weight: var(--bld-font-weight-normal);
+  
+    --bld-text-color: var(--bld-color-text);
+    --bld-text-disabled-color: var(--bld-color-gray-lighter);
+  
+    //   @each $item in $color-names {
+    //     --bld-text-color-#{$item}: var(--bld-color-#{$item});
+    //   }
+  
+    // --bld-text-link-color: var(--bld-color-brand-02-dark);
+    // --bld-text-link-hover-color: var(--bld-color-brand-01);
+    // --bld-text-link-focus-border-color: var(--bld-color-brand-01);
+    // --bld-text-link-active-color: var(--bld-color-white);
+    // --bld-text-link-active-hover-color: var(--bld-color-white);
+    // --bld-text-link-active-background-color: var(--bld-color-brand-01);
+    // --bld-text-link-active-border-color: var(--bld-color-brand-01);
+    // --bld-text-link-visited-color: #c8009c;
+    // --bld-text-link-inverse-color: var(--bld-color-white);
+    // --bld-text-link-disabled-color: var(--bld-color-gray-lighter);
+  
+    // --bld-text-label-color: var(--bld-color-brand-02-darkest);
+    // --bld-text-label-disabled-color: var(--bld-color-gray);
+  
+    /**
+          Private first level Variables
+          Don't directly use the variables below outside Style. These should be used in semantic named variables
+       */
+    // --bld-font-family-base: "Open Sans", sans-serif;
+    --bld-font-family-base: 'Nunito Sans', sans-serif;
+    --bld-font-family-heading: 'ABeeZee', sans-serif;
+  }

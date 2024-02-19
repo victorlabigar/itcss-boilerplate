@@ -1,0 +1,54 @@
+h1 {
+    @include bld-font('h1');
+    // @include media-breakpoint-down(sm) {
+    //   font-size: var(--bld-font-size-lg);
+    //   line-height: var(--bld-line-height-lg);
+    // }
+  }
+  
+  h2 {
+    @include bld-font('h2');
+    // @include media-breakpoint-down(md) {
+    //   font-size: var(--bld-font-size-xl);
+    // }
+  }
+  
+  h3 {
+    @include bld-font('h3');
+  }
+  
+  h4 {
+    @include bld-font('h4');
+  }
+  
+  h5 {
+    @include bld-font('h5');
+  }
+  
+  h6 {
+    @include bld-font('h5');
+  }
+  
+  p {
+    @include bld-font('p');
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+  }
+  
+  ol + :is(h2, h3, h4, h5, h6),
+  ul + :is(h2, h3, h4, h5, h6),
+  p + :is(h2, h3, h4, h5, h6) {
+    margin-top: 2.875rem;
+  }
+  
+  ul + :is(h3, h4, h5, h6) {
+    margin-top: 2.1875rem;
+  }
+  

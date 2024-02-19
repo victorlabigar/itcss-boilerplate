@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+/**
+ * Default styles for simple hyperlinks.
+ */
+
+// a:not([href]):not([tabindex]),
+// a:not([href]):not([tabindex]):focus,
+// a:not([href]):not([tabindex]):hover {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+a {
+    cursor: pointer;
+    transition: all $animationduration ease-in-out;
+    color: var(--bld-color-brand-secondary);
+    text-decoration: none;
+  
+    &.bold {
+      font-weight: bold;
+      color: var(--bld-color-brand-secondary);
+  
+      &::after {
+        content: ' »';
+      }
+    }
+  
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--bld-color-links-hover-global);
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
