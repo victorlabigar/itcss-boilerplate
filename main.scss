@@ -86,17 +86,17 @@
 /* # SETTINGS
    ========================================================================== */
 
-@import '01_settings/config';
-@import '01_settings/typograghy';
-@import '01_settings/colors';
-@import '01_settings/global';
+@import '01_settings/settings.config';
+@import '01_settings/settings.typography';
+@import '01_settings/settings.colors';
+@import '01_settings/settings.global';
 
 /* # TOOLS
    ========================================================================== */
 
-@import '02_tools/typography';
-@import '02_tools/mixins';
-@import '02_tools/animations';
+@import '02_tools/tools.typography';
+@import '02_tools/tools.mixins';
+@import '02_tools/tools.animations';
 
 /* # GENERIC
    ========================================================================== */
